@@ -1,0 +1,7 @@
+numpy>=1.23
+opencv-python>=4.7
+# GPU backends by OS (avoid CUDA/cuDNN requirement on Windows)
+onnxruntime-gpu>=1.16; platform_system == "Linux"
+onnxruntime-directml>=1.16; platform_system == "Windows"
+onnxruntime>=1.16; platform_system == "Darwin"
+requests>=2.31
